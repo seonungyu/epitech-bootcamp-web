@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CodingPedia</title>
+    <link rel="stylesheet" href="codingpedia.css">
+</head>
+<body>
+    <div class="moving_square"></div>
+    <header class="box">
+        <h1>Welcome to CodingPedia!</h1>
+        <nav class="box">
+            <ul>
+                <li><a href="index.html">Index</a></li>
+                <li><a href="php.html">PHP</a></li>
+                <li><a href="sql.html">SQL</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="content">
+        <main class="box">
+            <p>
+                CodingPedia is a collective encyclopedia project on the Internet aiming to be universal and multi-lingual which functions as a wiki.<br>
+                CodingPedia has for goal to offer freely reusable objective and verifiable content that anyone can modify and improve.
+            </p>
+            <form>
+                <p>
+                    <label for="first_name">First name:</label>
+                    <input type="text" id="first_name" name="first_name" required>
+                </p>
+                <p>
+                    <label for="last_name">Last name:</label>
+                    <input type="text" id="last_name" name="last_name" required>
+                </p>
+                <p>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </p>
+                <p>
+                    <label for="age">Age:</label>
+                    <input type="number" id="age" name="age" min="3" max="99">
+                </p>
+                <p>
+                    <label for="phone">Phone number:</label>
+                    <input type="tel" id="phone" name="phone" minlength="10" maxlength="10">
+                </p>
+                <fieldset>
+                    <legend>Sex:</legend>
+                    <p>
+                        <input type="radio" id="male" name="sex" value="male" checked>
+                        <label for="male">Male</label>
+                    </p>
+                    <p>
+                        <input type="radio" id="female" name="sex" value="female">
+                        <label for="female">Female</label>
+                    </p>
+                </fieldset>
+                <p>
+                    <label for="hair_color">Hair color:</label>
+                    <input type="color" id="hair_color" name="hair_color">
+                </p>
+                <p>
+                    <label for="date">Date:</label>
+                    <input type="date" id="date" name="date" required>
+                </p>
+                <p>
+                    <label for="technology">Technology:</label>
+                    <select id="technology" name="technology">
+                        <option value="html">HTML</option>
+                        <option value="css">CSS</option>
+                        <option value="php">PHP</option>
+                        <option value="sql">SQL</option>
+                    </select>
+                </p>
+                <p>
+                    <label for="question">Question:</label>
+                    <textarea id="question" name="question" required></textarea>
+                </p>
+                <p>
+                    <button type="submit">Submit</button>
+                </p>
+            </form>
+        </main>
+        <aside class="box">
+            <p>Hello! I am Seon-ung, an Epitech student discovering web development during the Web bootcamp.</p>
+        </aside>
+    </div>
+    <footer class="box">
+        <address>
+            YU Seon-ung -
+            <a href="tel:+33144080060">+33 1 44 08 00 60</a> -
+            24 Rue Pasteur, 94270 Le Kremlin-Bic&ecirc;tre, France
+        </address>
+    </footer>
+</body>
+</html>

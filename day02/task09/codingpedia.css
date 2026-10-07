@@ -1,0 +1,125 @@
+body {
+    background-color: grey;
+}
+
+.box {
+    border: 2px solid black;
+    margin: 10px;
+    padding: 0 10px;
+    background-color: white;
+}
+
+/* grid: title 5 parts, navigation 1 part */
+header {
+    display: grid;
+    grid-template-columns: 5fr 1fr;
+}
+
+/* flexbox: main and aside side by side */
+.content {
+    display: flex;
+}
+
+main {
+    flex: 0 0 80%;
+    box-sizing: border-box;
+}
+
+aside {
+    flex: 1;
+}
+
+pre {
+    overflow-x: auto;
+}
+
+aside figure,
+aside blockquote {
+    margin: 10px 0;
+}
+
+/* red square: 1 cycle = 5 seconds, repeated 5 times */
+.moving_square {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    animation: square_cycle 5s 5;
+}
+
+@keyframes square_cycle {
+    0% {
+        transform: translate(0, 0);
+        background-color: red;
+    }
+    25% {
+        transform: translate(0, 300px);
+        background-color: green;
+    }
+    50% {
+        transform: translate(300px, 300px);
+        background-color: blue;
+    }
+    75% {
+        transform: translate(300px, 0);
+        background-color: yellow;
+    }
+    100% {
+        transform: translate(0, 0);
+        background-color: red;
+    }
+}
+
+/* ===== BONUS layout ===== */
+header {
+    align-items: center;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    padding: 0;
+}
+
+nav a {
+    padding: 2px 18px;
+}
+
+nav a[aria-current="page"] {
+    background-color: cornflowerblue;
+}
+
+footer {
+    text-align: center;
+}
+
+/* form: labels on the left, fields on the right */
+form p {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 8px 10px;
+}
+
+form button {
+    grid-column: 2;
+}
+
+fieldset {
+    border: none;
+    margin: 0;
+    padding: 0;
+}
+
+fieldset legend {
+    margin: 8px 10px;
+    padding: 0;
+}
+
+fieldset input[type="radio"] {
+    order: 2;
+    justify-self: center;
+}
+
+input[type="color"] {
+    justify-self: start;
+}
