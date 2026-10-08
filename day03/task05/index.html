@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YU Seon-ung - Portfolio</title>
+    <!-- MaterializeCSS v2 from a CDN: no custom CSS file, no style attribute -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@materializecss/materialize@2.2.2/dist/css/materialize.min.css">
+    <!-- Materialize v2 follows the computer's dark mode: force its light theme -->
+    <script>document.documentElement.setAttribute("theme", "light");</script>
+</head>
+<body class="grey lighten-3">
+
+    <!-- Step A: full-width colored div with two titles -->
+    <div class="teal">
+        <h1 class="white-text center-align">YU Seon-ung</h1>
+        <h2 class="grey-text white center-align">Web developer in training</h2>
+    </div>
+
+    <div class="container">
+
+        <!-- Step B / C / D: "About me" row with three divs of the same size -->
+        <div class="row">
+            <h3 class="col s12 center-align">About me</h3>
+
+            <!-- Step B: Story -->
+            <div class="col s12 m4">
+                <h4 class="center-align">Story</h4>
+                <p>
+                    I come from a non-computer-science background and I started coding at Epitech.
+                    After a first bootcamp in Python (shell, Git, algorithms, a hangman game with a GUI),
+                    I am now following the Web bootcamp to learn HTML, CSS and responsive design.
+                </p>
+            </div>
+
+            <!-- Step C: Profile (same background color as the top div) -->
+            <div class="col s12 m4 teal">
+                <h4 class="white-text center-align">Profile</h4>
+                <div class="card teal darken-2 white-text">
+                    <div class="card-content center-align">
+                        <img class="circle responsive-img" src="https://github.com/seonungyu.png" alt="Profile picture of Seon-ung">
+                        <p>YU Seon-ung</p>
+                        <p>Epitech student</p>
+                    </div>
+                    <div class="card-action center-align">
+                        <a class="white-text" href="https://github.com/seonungyu">GitHub</a>
+                        <a class="white-text" href="https://www.linkedin.com/">LinkedIn</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Step D: Skills (one grey row every two rows) -->
+            <div class="col s12 m4">
+                <h4 class="center-align">Skills</h4>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Skill</th>
+                            <th>Comment</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>HTML</td>
+                            <td>Semantic structure, tables and forms.</td>
+                        </tr>
+                        <tr class="grey lighten-1">
+                            <td>CSS</td>
+                            <td>Flexbox, grid, animations, media queries.</td>
+                        </tr>
+                        <tr>
+                            <td>Python</td>
+                            <td>My first language, used for a hangman game.</td>
+                        </tr>
+                        <tr class="grey lighten-1">
+                            <td>Shell</td>
+                            <td>Bash scripts to automate files and folders.</td>
+                        </tr>
+                        <tr>
+                            <td>Git</td>
+                            <td>Commit and push my work to GitHub.</td>
+                        </tr>
+                        <tr class="grey lighten-1">
+                            <td>Materialize</td>
+                            <td>Discovering it with this page!</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <!-- Step E: Portfolio and Last projects, three responsive images each -->
+        <div class="row">
+            <h3 class="col s12 center-align">Portfolio</h3>
+            <div class="col s12 m4">
+                <img class="responsive-img" src="https://picsum.photos/seed/portfolio1/600/400" alt="Portfolio image 1">
+            </div>
+            <div class="col s12 m4">
+                <img class="responsive-img" src="https://picsum.photos/seed/portfolio2/600/400" alt="Portfolio image 2">
+            </div>
+            <div class="col s12 m4">
+                <img class="responsive-img" src="https://picsum.photos/seed/portfolio3/600/400" alt="Portfolio image 3">
+            </div>
+        </div>
+
+        <div class="row">
+            <h3 class="col s12 center-align">Last projects</h3>
+            <div class="col s12 m4">
+                <img class="responsive-img" src="https://picsum.photos/seed/project1/600/400" alt="Last project image 1">
+            </div>
+            <div class="col s12 m4">
+                <img class="responsive-img" src="https://picsum.photos/seed/project2/600/400" alt="Last project image 2">
+            </div>
+            <div class="col s12 m4">
+                <img class="responsive-img" src="https://picsum.photos/seed/project3/600/400" alt="Last project image 3">
+            </div>
+        </div>
+
+        <!-- Step F: Contact form -->
+        <div class="row">
+            <h3 class="col s12 center-align">Contact</h3>
+            <div class="col s12">
+                <div class="row">
+                    <form class="col s12">
+                        <div class="row">
+                            <div class="input-field col s6">
+                                <input id="last_name" name="last_name" type="text" placeholder=" ">
+                                <label for="last_name">Lastname</label>
+                            </div>
+                            <div class="input-field col s6">
+                                <input id="first_name" name="first_name" type="text" placeholder=" ">
+                                <label for="first_name">Firstname</label>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="input-field col s12">
+                                <input id="email" name="email" type="email" placeholder=" ">
+                                <label for="email">Email</label>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="input-field col s12">
+                                <textarea id="message" name="message" class="materialize-textarea" placeholder="Your message"></textarea>
+                                <label for="message">Message</label>
+                            </div>
+                        </div>
+                        <div class="center-align">
+                            <button class="btn teal" type="submit">Send</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/@materializecss/materialize@2.2.2/dist/js/materialize.min.js"></script>
+</body>
+</html>

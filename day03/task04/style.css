@@ -1,0 +1,118 @@
+/* ===== Default layout = smartphone (mobile first) ===== */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 10px;
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+h2,
+h3 {
+    margin: 0;
+    font-size: 1em;
+}
+
+header,
+section,
+article,
+footer {
+    padding: 10px;
+}
+
+header {
+    min-height: 100px;
+}
+
+.green,
+article {
+    min-height: 220px;
+}
+
+footer {
+    min-height: 90px;
+}
+
+/* the second section only holds the articles: no padding of its own */
+.articles {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 0;
+}
+
+/* color classes */
+.blue {
+    background-color: #67B3DD;
+}
+
+.green {
+    background-color: #9EE062;
+}
+
+.yellow {
+    background-color: #FEDF6B;
+}
+
+.purple {
+    background-color: #6B2683;
+    color: white;
+}
+
+.pink {
+    background-color: #F03DB5;
+}
+
+.red {
+    background-color: #FC302D;
+}
+
+/* smartphones (up to 767px): only the first two articles */
+@media (max-width: 767px) {
+    .articles article:nth-child(n+3) {
+        display: none;
+    }
+}
+
+/* tablets (768px - 1023px): 2 columns, 4 articles */
+@media (min-width: 768px) and (max-width: 1023px) {
+    header {
+        width: 50%;
+    }
+
+    .articles {
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 10px 30px;
+    }
+
+    .articles article {
+        flex: 0 0 calc((100% - 30px) / 2);
+    }
+
+    .articles article:nth-child(n+5) {
+        display: none;
+    }
+}
+
+/* desktops (1024px and more): 3 columns, all 6 articles */
+@media (min-width: 1024px) {
+    header {
+        width: 50%;
+    }
+
+    .articles {
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 10px 30px;
+    }
+
+    .articles article {
+        flex: 0 0 calc((100% - 2 * 30px) / 3);
+    }
+}
