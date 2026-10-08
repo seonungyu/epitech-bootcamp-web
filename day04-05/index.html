@@ -43,8 +43,8 @@
         <section class="hero">
             <div class="hero-text">
                 <p class="eyebrow">
-                    <span lang="en">Online resume · Est. Daegu</span>
-                    <span lang="ko">온라인 이력서 · 대구에서 시작</span>
+                    <span lang="en">Daegu &middot; Paris</span>
+                    <span lang="ko">대구 &middot; 파리</span>
                 </p>
                 <h1 class="hero-name">Seon-ung YU</h1>
                 <p class="hero-name-ko">유선웅</p>
@@ -187,47 +187,54 @@
             </article>
         </section>
 
+        <!-- ===== Paris banner ===== -->
+        <section class="banner" aria-label="Quote">
+            <div class="banner-content reveal">
+                <p class="banner-ornament" aria-hidden="true">&#10022;</p>
+                <blockquote class="banner-quote">
+                    <p lang="en">“Precision on the track, patience on the clay, curiosity on the road.”</p>
+                    <p lang="ko">“트랙 위의 정확함, 클레이 위의 인내, 길 위의 호기심.”</p>
+                </blockquote>
+                <p class="banner-place">Daegu &mdash; Paris</p>
+            </div>
+        </section>
+
         <!-- ===== Interests ===== -->
         <section class="section section-navy reveal" id="interests">
             <p class="section-label">IV.</p>
             <h2 class="section-title"><span lang="en">Interests</span><span lang="ko">관심사</span></h2>
             <p class="section-intro">
-                <span lang="en">Tap or hover a card to turn it over.</span>
-                <span lang="ko">카드를 누르거나 마우스를 올려 뒤집어 보세요.</span>
+                <span lang="en">Tap or hover a photograph to turn it over.</span>
+                <span lang="ko">사진을 누르거나 마우스를 올려 뒤집어 보세요.</span>
             </p>
             <div class="cards">
                 <button class="card" type="button" aria-pressed="false">
                     <span class="card-inner">
                         <span class="card-face card-front">
-                            <svg class="card-icon" viewBox="0 0 64 64" aria-hidden="true">
-                                <circle cx="32" cy="32" r="26"/>
-                                <path d="M12 16 C28 26 28 38 12 48"/>
-                                <path d="M52 16 C36 26 36 38 52 48"/>
-                            </svg>
-                            <span class="card-title"><span lang="en">Tennis</span><span lang="ko">테니스</span></span>
+                            <img class="card-photo" src="img/tennis-roland-garros.jpg" alt="Crowd around the clay court Suzanne-Lenglen at Roland-Garros, Paris" width="1200" height="675" loading="lazy">
+                            <span class="card-caption">
+                                <span class="card-number">No. 01 &mdash; Roland-Garros</span>
+                                <span class="card-title"><span lang="en">Tennis</span><span lang="ko">테니스</span></span>
+                            </span>
                         </span>
                         <span class="card-face card-back">
-                            <span lang="en">A sport of patience and precision. Every point is a small problem to solve, like a bug to fix.</span>
-                            <span lang="ko">인내와 정확함의 스포츠. 한 포인트 한 포인트가 버그를 고치는 것처럼 풀어야 할 작은 문제입니다.</span>
+                            <span class="card-number">No. 01 &mdash; Roland-Garros</span>
+                            <span lang="en">The red clay of Roland-Garros, the Grand Slam of Paris, is now just across the city from my home. On clay, every rally is long: points are won with patience and precision, like a bug fixed one step at a time.</span>
+                            <span lang="ko">파리의 그랜드슬램, 롤랑가로스의 붉은 클레이 코트는 이제 제가 사는 곳에서 멀지 않습니다. 클레이에서는 랠리가 길어서 인내와 정확함으로 포인트를 따냅니다. 버그를 한 단계씩 고쳐 나가는 것처럼요.</span>
                         </span>
                     </span>
                 </button>
                 <button class="card" type="button" aria-pressed="false">
                     <span class="card-inner">
                         <span class="card-face card-front">
-                            <svg class="card-icon" viewBox="0 0 64 64" aria-hidden="true">
-                                <line x1="14" y1="8" x2="14" y2="58"/>
-                                <rect x="14" y="10" width="36" height="24"/>
-                                <rect class="fill" x="14" y="10" width="9" height="8"/>
-                                <rect class="fill" x="32" y="10" width="9" height="8"/>
-                                <rect class="fill" x="23" y="18" width="9" height="8"/>
-                                <rect class="fill" x="41" y="18" width="9" height="8"/>
-                                <rect class="fill" x="14" y="26" width="9" height="8"/>
-                                <rect class="fill" x="32" y="26" width="9" height="8"/>
-                            </svg>
-                            <span class="card-title">Formula 1</span>
+                            <img class="card-photo" src="img/f1-lotus-79.jpg" alt="Black and gold Lotus 79 Formula 1 car on a race track" width="1200" height="750" loading="lazy">
+                            <span class="card-caption">
+                                <span class="card-number">No. 02</span>
+                                <span class="card-title">Formula 1</span>
+                            </span>
                         </span>
                         <span class="card-face card-back">
+                            <span class="card-number">No. 02 &mdash; Formula 1</span>
                             <span lang="en">Where my automotive engineering background meets software: telemetry, strategy and data at 300 km/h.</span>
                             <span lang="ko">자동차공학과 소프트웨어가 만나는 곳. 시속 300km에서의 텔레메트리, 전략, 데이터.</span>
                         </span>
@@ -236,15 +243,14 @@
                 <button class="card" type="button" aria-pressed="false">
                     <span class="card-inner">
                         <span class="card-face card-front">
-                            <svg class="card-icon" viewBox="0 0 64 64" aria-hidden="true">
-                                <circle cx="32" cy="32" r="26"/>
-                                <ellipse cx="32" cy="32" rx="11" ry="26"/>
-                                <line x1="6" y1="32" x2="58" y2="32"/>
-                                <path d="M10 20 H54 M10 44 H54"/>
-                            </svg>
-                            <span class="card-title"><span lang="en">Travel</span><span lang="ko">여행</span></span>
+                            <img class="card-photo" src="img/travel-eiffel-tower.jpg" alt="The Eiffel Tower lit up at dusk" width="1200" height="675" loading="lazy">
+                            <span class="card-caption">
+                                <span class="card-number">No. 03</span>
+                                <span class="card-title"><span lang="en">Travel</span><span lang="ko">여행</span></span>
+                            </span>
                         </span>
                         <span class="card-face card-back">
+                            <span class="card-number">No. 03 &mdash; <span lang="en">Travel</span><span lang="ko">여행</span></span>
                             <span lang="en">From Daegu to Paris: discovering new cities, cultures and people is what brought me here.</span>
                             <span lang="ko">대구에서 파리까지. 새로운 도시와 문화, 사람을 만나는 일이 저를 여기까지 이끌었습니다.</span>
                         </span>
@@ -306,6 +312,14 @@
         <p>
             <span lang="en">© 2026 Seon-ung YU · Hand-made with HTML, CSS and JavaScript at Epitech</span>
             <span lang="ko">© 2026 유선웅 · Epitech에서 HTML, CSS, JavaScript로 직접 만들었습니다</span>
+        </p>
+        <p class="credits">
+            <span lang="en">Photographs</span><span lang="ko">사진</span>:
+            <a href="https://commons.wikimedia.org/wiki/File:Suzanne_Lenglen_Court,_Roland_Garros,_2_June_2019.jpg">Benh Lieu Song</a> (CC BY-SA 2.0),
+            <a href="https://commons.wikimedia.org/wiki/File:Lotus_79_Snetterton.jpg">bobaliciouslondon</a> (CC BY 2.0),
+            <a href="https://commons.wikimedia.org/wiki/File:Eiffel_Tower,_Paris_12_June_2023.jpg">Pierre Blach&eacute;</a> (CC0),
+            <a href="https://commons.wikimedia.org/wiki/File:The_Eiffel_Tower_at_the_sunset,_Paris_20_April_2013.jpg">Alexander Kachkaev</a> (CC BY 2.0)
+            &middot; Wikimedia Commons
         </p>
     </footer>
 

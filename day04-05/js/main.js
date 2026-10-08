@@ -117,6 +117,7 @@ const words = [
     { word: "PARIS", en: "Where I live now", ko: "지금 사는 도시" },
     { word: "DAEGU", en: "My hometown", ko: "내 고향" },
     { word: "TENNIS", en: "My favorite sport", ko: "가장 좋아하는 스포츠" },
+    { word: "CLAY", en: "The red surface of Roland-Garros", ko: "롤랑가로스의 붉은 코트 재질" },
     { word: "PYTHON", en: "My first programming language", ko: "처음 배운 프로그래밍 언어" },
     { word: "ENGINE", en: "The heart of a car", ko: "자동차의 심장" },
     { word: "EPITECH", en: "My school", ko: "나의 학교" }

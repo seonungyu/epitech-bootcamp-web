@@ -9,7 +9,7 @@ day04-05/
 ├── index.html      → content only (HTML)
 ├── css/style.css   → all the design (CSS, mobile first)
 ├── js/main.js      → interactive parts (JavaScript)
-└── img/portrait.png
+└── img/            → portrait + photographs (Roland-Garros, Lotus 79, Paris)
 ```
 
 ## Requirements of the subject
@@ -26,3 +26,10 @@ day04-05/
 ## Run it
 
 Open `index.html` in a browser. Add `?lang=ko` to the address to open the Korean version.
+
+## Photo credits (Wikimedia Commons)
+
+- Roland-Garros, court Suzanne-Lenglen — Benh Lieu Song, CC BY-SA 2.0
+- Lotus 79 at Snetterton — bobaliciouslondon, CC BY 2.0
+- Eiffel Tower at dusk — Pierre Blaché, CC0
+- Eiffel Tower at sunset (banner) — Alexander Kachkaev, CC BY 2.0
