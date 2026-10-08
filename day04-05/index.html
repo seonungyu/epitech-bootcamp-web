@@ -7,20 +7,28 @@
     <title>Seon-ung YU - Resume</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;1,500&amp;family=Lato:wght@300;400;700&amp;family=Noto+Sans+KR:wght@300;400;700&amp;family=Noto+Serif+KR:wght@500;700&amp;family=Playfair+Display:wght@500;700&amp;display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600&amp;family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&amp;family=Lato:wght@300;400;700&amp;family=Noto+Sans+KR:wght@300;400;700&amp;family=Noto+Serif+KR:wght@500;600&amp;display=swap">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
-    <!-- ===== Navigation ===== -->
+    <!-- ===== Header: centered crest, menu underneath (desktop) ===== -->
     <header class="site-header">
         <nav class="nav">
-            <a class="crest" href="#top" aria-label="Back to top">SY</a>
-
             <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-links">
                 <span class="nav-toggle-bar"></span>
                 <span class="visually-hidden">Menu</span>
             </button>
+
+            <a class="brand" href="#top">
+                <span class="crest" aria-hidden="true">SY</span>
+                <span class="brand-name">Seon-ung YU</span>
+            </a>
+
+            <div class="lang-switch" role="group" aria-label="Language">
+                <button type="button" class="lang-btn" data-lang="en" aria-pressed="true">EN</button>
+                <button type="button" class="lang-btn" data-lang="ko" aria-pressed="false">KO</button>
+            </div>
 
             <ul class="nav-links" id="nav-links">
                 <li><a href="#about"><span lang="en">About</span><span lang="ko">소개</span></a></li>
@@ -29,168 +37,177 @@
                 <li><a href="#interests"><span lang="en">Interests</span><span lang="ko">관심사</span></a></li>
                 <li><a href="#contact"><span lang="en">Contact</span><span lang="ko">연락하기</span></a></li>
             </ul>
-
-            <div class="lang-switch" role="group" aria-label="Language">
-                <button type="button" class="lang-btn" data-lang="en" aria-pressed="true">EN</button>
-                <button type="button" class="lang-btn" data-lang="ko" aria-pressed="false">KO</button>
-            </div>
         </nav>
     </header>
 
     <main id="top">
 
-        <!-- ===== Hero ===== -->
+        <!-- ===== Hero: symmetric, small oval portrait like a royal medallion ===== -->
         <section class="hero">
-            <div class="hero-text">
-                <p class="eyebrow">
-                    <span lang="en">Daegu &middot; Paris</span>
-                    <span lang="ko">대구 &middot; 파리</span>
-                </p>
-                <h1 class="hero-name">Seon-ung YU</h1>
-                <p class="hero-name-ko">유선웅</p>
-                <p class="hero-tagline">
-                    <span lang="en">From automotive engineering to software development.<br>Epitech student from Daegu, South Korea, now living in Paris.</span>
-                    <span lang="ko">자동차공학에서 소프트웨어 개발로.<br>대구 출신 Epitech 학생, 지금은 파리에서 지내고 있습니다.</span>
-                </p>
-                <div class="hero-actions">
-                    <a class="btn btn-gold" href="#contact"><span lang="en">Get in touch</span><span lang="ko">연락하기</span></a>
-                    <a class="btn btn-outline" href="#project"><span lang="en">See my project</span><span lang="ko">프로젝트 보기</span></a>
-                </div>
-            </div>
-            <figure class="portrait">
+            <figure class="medallion">
                 <img src="img/portrait.png" alt="Portrait of Seon-ung YU" width="246" height="328">
             </figure>
-        </section>
-
-        <div class="stripes" aria-hidden="true"></div>
-
-        <!-- ===== About ===== -->
-        <section class="section reveal" id="about">
-            <p class="section-label">I.</p>
-            <h2 class="section-title"><span lang="en">About me</span><span lang="ko">소개</span></h2>
-            <div class="about-grid">
-                <div class="about-text">
-                    <p lang="en">
-                        I grew up in Daegu, South Korea, where I studied automotive engineering at Keimyung University.
-                        Understanding how a car works taught me to love precise, well-built machines, and it made me
-                        curious about the software that drives them.
-                    </p>
-                    <p lang="ko">
-                        대구에서 자랐고 계명대학교에서 자동차공학을 전공했습니다.
-                        자동차가 움직이는 원리를 배우며 정밀하게 잘 만들어진 기계를 좋아하게 되었고,
-                        그 기계를 움직이는 소프트웨어에 관심이 생겼습니다.
-                    </p>
-                    <p lang="en">
-                        Today I am an Epitech student in Paris, learning to code from the ground up: shell, Python,
-                        Git, HTML and CSS. I live at the Korean House of the Cité internationale universitaire de Paris.
-                    </p>
-                    <p lang="ko">
-                        지금은 파리에서 Epitech 학생으로 셸, 파이썬, Git, HTML, CSS를 처음부터 배우고 있습니다.
-                        파리 국제대학촌 한국관에 살고 있습니다.
-                    </p>
-                </div>
-                <dl class="facts">
-                    <div class="fact">
-                        <dt><span lang="en">Hometown</span><span lang="ko">고향</span></dt>
-                        <dd><span lang="en">Daegu, South Korea</span><span lang="ko">대한민국 대구</span></dd>
-                    </div>
-                    <div class="fact">
-                        <dt><span lang="en">Based in</span><span lang="ko">거주</span></dt>
-                        <dd><span lang="en">Paris, France</span><span lang="ko">프랑스 파리</span></dd>
-                    </div>
-                    <div class="fact">
-                        <dt><span lang="en">School</span><span lang="ko">학교</span></dt>
-                        <dd>Epitech</dd>
-                    </div>
-                </dl>
+            <p class="ornament" aria-hidden="true">&#x269C;&#xFE0E;</p>
+            <p class="eyebrow">
+                <span lang="en">Daegu &middot; Paris</span>
+                <span lang="ko">대구 &middot; 파리</span>
+            </p>
+            <h1 class="hero-name">Seon-ung YU</h1>
+            <p class="hero-name-ko">유선웅</p>
+            <p class="hero-tagline">
+                <span lang="en">From automotive engineering to software development.<br>Epitech student from Daegu, South Korea, now living in Paris.</span>
+                <span lang="ko">자동차공학에서 소프트웨어 개발로.<br>대구 출신 Epitech 학생, 지금은 파리에서 지내고 있습니다.</span>
+            </p>
+            <div class="hero-actions">
+                <a class="btn btn-gold" href="#contact"><span lang="en">Get in touch</span><span lang="ko">연락하기</span></a>
+                <a class="btn btn-ghost" href="#project"><span lang="en">See my project</span><span lang="ko">프로젝트 보기</span></a>
             </div>
         </section>
 
-        <!-- ===== Education ===== -->
-        <section class="section section-cream reveal" id="education">
-            <p class="section-label">II.</p>
-            <h2 class="section-title"><span lang="en">Education</span><span lang="ko">학력</span></h2>
-            <ol class="timeline">
-                <li class="timeline-item">
-                    <p class="timeline-date"><span lang="en">Since September 2026</span><span lang="ko">2026년 9월 ~ 현재</span></p>
-                    <h3>Epitech — International Campus</h3>
-                    <p class="timeline-place"><span lang="en">Paris, France</span><span lang="ko">프랑스 파리</span></p>
-                    <p>
-                        <span lang="en">Project-based IT program. Bootcamps completed: Python (shell, Git, algorithms, a game with a GUI) and Web (HTML, CSS, responsive design).</span>
-                        <span lang="ko">프로젝트 중심 IT 과정. 수료한 부트캠프: Python(셸, Git, 알고리즘, GUI 게임)과 Web(HTML, CSS, 반응형 디자인).</span>
-                    </p>
-                </li>
-                <li class="timeline-item">
-                    <p class="timeline-date"><span lang="en">Previously</span><span lang="ko">이전</span></p>
-                    <h3><span lang="en">Keimyung University</span><span lang="ko">계명대학교</span></h3>
-                    <p class="timeline-place"><span lang="en">Daegu, South Korea</span><span lang="ko">대한민국 대구</span></p>
-                    <p>
-                        <span lang="en">Major in Automotive Engineering.</span>
-                        <span lang="ko">자동차공학 전공.</span>
-                    </p>
-                </li>
-            </ol>
+        <!-- ===== I. About ===== -->
+        <section class="section section-ivory" id="about">
+            <div class="section-inner reveal">
+                <header class="section-head">
+                    <p class="section-label">I</p>
+                    <h2 class="section-title"><span lang="en">About me</span><span lang="ko">소개</span></h2>
+                </header>
+                <div class="about-grid">
+                    <div class="about-text">
+                        <p class="lead" lang="en">
+                            I grew up in Daegu, South Korea, where I studied automotive engineering at Keimyung University.
+                            Understanding how a car works taught me to love precise, well-built machines, and it made me
+                            curious about the software that drives them.
+                        </p>
+                        <p class="lead" lang="ko">
+                            대구에서 자랐고 계명대학교에서 자동차공학을 전공했습니다.
+                            자동차가 움직이는 원리를 배우며 정밀하게 잘 만들어진 기계를 좋아하게 되었고,
+                            그 기계를 움직이는 소프트웨어에 관심이 생겼습니다.
+                        </p>
+                        <p lang="en">
+                            Today I am an Epitech student in Paris, learning to code from the ground up: shell, Python,
+                            Git, HTML and CSS. I live at the Korean House of the Cité internationale universitaire de Paris.
+                        </p>
+                        <p lang="ko">
+                            지금은 파리에서 Epitech 학생으로 셸, 파이썬, Git, HTML, CSS를 처음부터 배우고 있습니다.
+                            파리 국제대학촌 한국관에 살고 있습니다.
+                        </p>
+                    </div>
+                    <div class="facts frame">
+                        <p class="facts-title"><span lang="en">At a glance</span><span lang="ko">한눈에 보기</span></p>
+                        <dl>
+                            <div class="fact">
+                                <dt><span lang="en">Hometown</span><span lang="ko">고향</span></dt>
+                                <dd><span lang="en">Daegu, South Korea</span><span lang="ko">대한민국 대구</span></dd>
+                            </div>
+                            <div class="fact">
+                                <dt><span lang="en">Based in</span><span lang="ko">거주</span></dt>
+                                <dd><span lang="en">Paris, France</span><span lang="ko">프랑스 파리</span></dd>
+                            </div>
+                            <div class="fact">
+                                <dt><span lang="en">School</span><span lang="ko">학교</span></dt>
+                                <dd>Epitech</dd>
+                            </div>
+                        </dl>
+                    </div>
+                </div>
+            </div>
         </section>
 
-        <!-- ===== Project ===== -->
-        <section class="section reveal" id="project">
-            <p class="section-label">III.</p>
-            <h2 class="section-title"><span lang="en">Project</span><span lang="ko">프로젝트</span></h2>
+        <!-- ===== II. Education ===== -->
+        <section class="section section-parchment" id="education">
+            <div class="section-inner reveal">
+                <header class="section-head">
+                    <p class="section-label">II</p>
+                    <h2 class="section-title"><span lang="en">Education</span><span lang="ko">학력</span></h2>
+                </header>
+                <ol class="timeline">
+                    <li class="timeline-item">
+                        <p class="timeline-date"><span lang="en">Since September 2026</span><span lang="ko">2026년 9월 ~ 현재</span></p>
+                        <h3>Epitech — International Campus</h3>
+                        <p class="timeline-place"><span lang="en">Paris, France</span><span lang="ko">프랑스 파리</span></p>
+                        <p>
+                            <span lang="en">Project-based IT program. Bootcamps completed: Python (shell, Git, algorithms, a game with a GUI) and Web (HTML, CSS, responsive design).</span>
+                            <span lang="ko">프로젝트 중심 IT 과정. 수료한 부트캠프: Python(셸, Git, 알고리즘, GUI 게임)과 Web(HTML, CSS, 반응형 디자인).</span>
+                        </p>
+                    </li>
+                    <li class="timeline-item">
+                        <p class="timeline-date"><span lang="en">Previously</span><span lang="ko">이전</span></p>
+                        <h3><span lang="en">Keimyung University</span><span lang="ko">계명대학교</span></h3>
+                        <p class="timeline-place"><span lang="en">Daegu, South Korea</span><span lang="ko">대한민국 대구</span></p>
+                        <p>
+                            <span lang="en">Major in Automotive Engineering.</span>
+                            <span lang="ko">자동차공학 전공.</span>
+                        </p>
+                    </li>
+                </ol>
+            </div>
+        </section>
 
-            <article class="project">
-                <div class="project-info">
-                    <h3>Hangman — Python &amp; Pygame</h3>
-                    <p>
-                        <span lang="en">A complete hangman game built during the Epitech Python bootcamp, from a terminal version to a graphical one.</span>
-                        <span lang="ko">Epitech 파이썬 부트캠프에서 만든 행맨 게임입니다. 터미널 버전부터 시작해 그래픽 버전까지 완성했습니다.</span>
-                    </p>
-                    <ul class="feature-list">
-                        <li><span lang="en">Menu with three difficulty levels</span><span lang="ko">난이도 3단계 메뉴</span></li>
-                        <li><span lang="en">3-minute timer and a life bar</span><span lang="ko">3분 타이머와 생명 바</span></li>
-                        <li><span lang="en">Hint key and high-score leaderboard</span><span lang="ko">힌트 키와 최고 점수 순위표</span></li>
-                        <li><span lang="en">Packaged as a Windows executable</span><span lang="ko">윈도우 실행 파일로 배포</span></li>
-                    </ul>
-                    <ul class="tags">
-                        <li>Python</li>
-                        <li>Pygame</li>
-                        <li>PyInstaller</li>
-                        <li>Git</li>
-                    </ul>
-                    <a class="btn btn-outline-dark" href="https://github.com/seonungyu/epitech-bootcamp-day01/tree/main/day09">
-                        <span lang="en">View the code on GitHub</span><span lang="ko">GitHub에서 코드 보기</span>
-                    </a>
-                </div>
+        <!-- ===== III. Project ===== -->
+        <section class="section section-ivory" id="project">
+            <div class="section-inner reveal">
+                <header class="section-head">
+                    <p class="section-label">III</p>
+                    <h2 class="section-title"><span lang="en">Project</span><span lang="ko">프로젝트</span></h2>
+                </header>
 
-                <!-- Mini playable version (js/main.js) -->
-                <div class="mini-game">
-                    <p class="mini-game-title"><span lang="en">Try a mini version</span><span lang="ko">미니 버전 해보기</span></p>
-                    <svg class="gallows" viewBox="0 0 200 220" aria-hidden="true">
-                        <line x1="20" y1="210" x2="140" y2="210"/>
-                        <line x1="50" y1="210" x2="50" y2="20"/>
-                        <line x1="50" y1="20" x2="130" y2="20"/>
-                        <line x1="130" y1="20" x2="130" y2="45"/>
-                        <circle class="part" cx="130" cy="65" r="20"/>
-                        <line class="part" x1="130" y1="85" x2="130" y2="140"/>
-                        <line class="part" x1="130" y1="100" x2="105" y2="120"/>
-                        <line class="part" x1="130" y1="100" x2="155" y2="120"/>
-                        <line class="part" x1="130" y1="140" x2="110" y2="175"/>
-                        <line class="part" x1="130" y1="140" x2="150" y2="175"/>
-                    </svg>
-                    <p class="mini-game-hint" id="game-hint"></p>
-                    <p class="mini-game-word" id="game-word" aria-live="polite"></p>
-                    <p class="mini-game-status" id="game-status" aria-live="polite"></p>
-                    <div class="keyboard" id="keyboard"></div>
-                    <button class="btn btn-gold btn-small" type="button" id="game-restart">
-                        <span lang="en">New word</span><span lang="ko">새 단어</span>
-                    </button>
-                </div>
-            </article>
+                <article class="project frame">
+                    <div class="project-info">
+                        <p class="project-kicker"><span lang="en">Epitech · Python bootcamp</span><span lang="ko">Epitech · 파이썬 부트캠프</span></p>
+                        <h3>Hangman</h3>
+                        <p class="project-sub">Python &amp; Pygame</p>
+                        <p>
+                            <span lang="en">A complete hangman game built during the Epitech Python bootcamp, from a terminal version to a graphical one.</span>
+                            <span lang="ko">Epitech 파이썬 부트캠프에서 만든 행맨 게임입니다. 터미널 버전부터 시작해 그래픽 버전까지 완성했습니다.</span>
+                        </p>
+                        <ul class="feature-list">
+                            <li><span lang="en">Menu with three difficulty levels</span><span lang="ko">난이도 3단계 메뉴</span></li>
+                            <li><span lang="en">3-minute timer and a life bar</span><span lang="ko">3분 타이머와 생명 바</span></li>
+                            <li><span lang="en">Hint key and high-score leaderboard</span><span lang="ko">힌트 키와 최고 점수 순위표</span></li>
+                            <li><span lang="en">Packaged as a Windows executable</span><span lang="ko">윈도우 실행 파일로 배포</span></li>
+                        </ul>
+                        <ul class="tags">
+                            <li>Python</li>
+                            <li>Pygame</li>
+                            <li>PyInstaller</li>
+                            <li>Git</li>
+                        </ul>
+                        <a class="btn btn-ghost-dark" href="https://github.com/seonungyu/epitech-bootcamp-day01/tree/main/day09">
+                            <span lang="en">View the code on GitHub</span><span lang="ko">GitHub에서 코드 보기</span>
+                        </a>
+                    </div>
+
+                    <!-- Mini playable version (js/main.js) -->
+                    <div class="mini-game">
+                        <p class="mini-game-title"><span lang="en">Try a mini version</span><span lang="ko">미니 버전 해보기</span></p>
+                        <svg class="gallows" viewBox="0 0 200 220" aria-hidden="true">
+                            <line x1="20" y1="210" x2="140" y2="210"/>
+                            <line x1="50" y1="210" x2="50" y2="20"/>
+                            <line x1="50" y1="20" x2="130" y2="20"/>
+                            <line x1="130" y1="20" x2="130" y2="45"/>
+                            <circle class="part" cx="130" cy="65" r="20"/>
+                            <line class="part" x1="130" y1="85" x2="130" y2="140"/>
+                            <line class="part" x1="130" y1="100" x2="105" y2="120"/>
+                            <line class="part" x1="130" y1="100" x2="155" y2="120"/>
+                            <line class="part" x1="130" y1="140" x2="110" y2="175"/>
+                            <line class="part" x1="130" y1="140" x2="150" y2="175"/>
+                        </svg>
+                        <p class="mini-game-hint" id="game-hint"></p>
+                        <p class="mini-game-word" id="game-word" aria-live="polite"></p>
+                        <p class="mini-game-status" id="game-status" aria-live="polite"></p>
+                        <div class="keyboard" id="keyboard"></div>
+                        <button class="btn btn-gold btn-small" type="button" id="game-restart">
+                            <span lang="en">New word</span><span lang="ko">새 단어</span>
+                        </button>
+                    </div>
+                </article>
+            </div>
         </section>
 
         <!-- ===== Paris banner ===== -->
         <section class="banner" aria-label="Quote">
-            <div class="banner-content reveal">
-                <p class="banner-ornament" aria-hidden="true">&#10022;</p>
+            <div class="banner-content frame frame-light reveal">
+                <p class="ornament" aria-hidden="true">&#x269C;&#xFE0E;</p>
                 <blockquote class="banner-quote">
                     <p lang="en">“Precision on the track, patience on the clay, curiosity on the road.”</p>
                     <p lang="ko">“트랙 위의 정확함, 클레이 위의 인내, 길 위의 호기심.”</p>
@@ -199,117 +216,128 @@
             </div>
         </section>
 
-        <!-- ===== Interests ===== -->
-        <section class="section section-navy reveal" id="interests">
-            <p class="section-label">IV.</p>
-            <h2 class="section-title"><span lang="en">Interests</span><span lang="ko">관심사</span></h2>
-            <p class="section-intro">
-                <span lang="en">Tap or hover a photograph to turn it over.</span>
-                <span lang="ko">사진을 누르거나 마우스를 올려 뒤집어 보세요.</span>
-            </p>
-            <div class="cards">
-                <button class="card" type="button" aria-pressed="false">
-                    <span class="card-inner">
-                        <span class="card-face card-front">
-                            <img class="card-photo" src="img/tennis-roland-garros.jpg" alt="Crowd around the clay court Suzanne-Lenglen at Roland-Garros, Paris" width="1200" height="675" loading="lazy">
-                            <span class="card-caption">
+        <!-- ===== IV. Interests ===== -->
+        <section class="section section-navy" id="interests">
+            <div class="section-inner reveal">
+                <header class="section-head">
+                    <p class="section-label">IV</p>
+                    <h2 class="section-title"><span lang="en">Interests</span><span lang="ko">관심사</span></h2>
+                    <p class="section-intro">
+                        <span lang="en">Tap or hover a photograph to turn it over.</span>
+                        <span lang="ko">사진을 누르거나 마우스를 올려 뒤집어 보세요.</span>
+                    </p>
+                </header>
+                <div class="cards">
+                    <button class="card" type="button" aria-pressed="false">
+                        <span class="card-inner">
+                            <span class="card-face card-front">
+                                <img class="card-photo" src="img/tennis-roland-garros.jpg" alt="Crowd around the clay court Suzanne-Lenglen at Roland-Garros, Paris" width="1200" height="675" loading="lazy">
+                                <span class="card-caption">
+                                    <span class="card-number">No. 01 &mdash; Roland-Garros</span>
+                                    <span class="card-title"><span lang="en">Tennis</span><span lang="ko">테니스</span></span>
+                                </span>
+                            </span>
+                            <span class="card-face card-back">
                                 <span class="card-number">No. 01 &mdash; Roland-Garros</span>
-                                <span class="card-title"><span lang="en">Tennis</span><span lang="ko">테니스</span></span>
+                                <span lang="en">The red clay of Roland-Garros, the Grand Slam of Paris, is now just across the city from my home. On clay, every rally is long: points are won with patience and precision, like a bug fixed one step at a time.</span>
+                                <span lang="ko">파리의 그랜드슬램, 롤랑가로스의 붉은 클레이 코트는 이제 제가 사는 곳에서 멀지 않습니다. 클레이에서는 랠리가 길어서 인내와 정확함으로 포인트를 따냅니다. 버그를 한 단계씩 고쳐 나가는 것처럼요.</span>
                             </span>
                         </span>
-                        <span class="card-face card-back">
-                            <span class="card-number">No. 01 &mdash; Roland-Garros</span>
-                            <span lang="en">The red clay of Roland-Garros, the Grand Slam of Paris, is now just across the city from my home. On clay, every rally is long: points are won with patience and precision, like a bug fixed one step at a time.</span>
-                            <span lang="ko">파리의 그랜드슬램, 롤랑가로스의 붉은 클레이 코트는 이제 제가 사는 곳에서 멀지 않습니다. 클레이에서는 랠리가 길어서 인내와 정확함으로 포인트를 따냅니다. 버그를 한 단계씩 고쳐 나가는 것처럼요.</span>
-                        </span>
-                    </span>
-                </button>
-                <button class="card" type="button" aria-pressed="false">
-                    <span class="card-inner">
-                        <span class="card-face card-front">
-                            <img class="card-photo" src="img/f1-lotus-79.jpg" alt="Black and gold Lotus 79 Formula 1 car on a race track" width="1200" height="750" loading="lazy">
-                            <span class="card-caption">
-                                <span class="card-number">No. 02</span>
-                                <span class="card-title">Formula 1</span>
+                    </button>
+                    <button class="card" type="button" aria-pressed="false">
+                        <span class="card-inner">
+                            <span class="card-face card-front">
+                                <img class="card-photo" src="img/f1-lotus-79.jpg" alt="Black and gold Lotus 79 Formula 1 car on a race track" width="1200" height="750" loading="lazy">
+                                <span class="card-caption">
+                                    <span class="card-number">No. 02 &mdash; Lotus 79</span>
+                                    <span class="card-title">Formula 1</span>
+                                </span>
+                            </span>
+                            <span class="card-face card-back">
+                                <span class="card-number">No. 02 &mdash; Formula 1</span>
+                                <span lang="en">Where my automotive engineering background meets software: telemetry, strategy and data at 300 km/h.</span>
+                                <span lang="ko">자동차공학과 소프트웨어가 만나는 곳. 시속 300km에서의 텔레메트리, 전략, 데이터.</span>
                             </span>
                         </span>
-                        <span class="card-face card-back">
-                            <span class="card-number">No. 02 &mdash; Formula 1</span>
-                            <span lang="en">Where my automotive engineering background meets software: telemetry, strategy and data at 300 km/h.</span>
-                            <span lang="ko">자동차공학과 소프트웨어가 만나는 곳. 시속 300km에서의 텔레메트리, 전략, 데이터.</span>
-                        </span>
-                    </span>
-                </button>
-                <button class="card" type="button" aria-pressed="false">
-                    <span class="card-inner">
-                        <span class="card-face card-front">
-                            <img class="card-photo" src="img/travel-eiffel-tower.jpg" alt="The Eiffel Tower lit up at dusk" width="1200" height="675" loading="lazy">
-                            <span class="card-caption">
-                                <span class="card-number">No. 03</span>
-                                <span class="card-title"><span lang="en">Travel</span><span lang="ko">여행</span></span>
+                    </button>
+                    <button class="card" type="button" aria-pressed="false">
+                        <span class="card-inner">
+                            <span class="card-face card-front">
+                                <img class="card-photo" src="img/travel-eiffel-tower.jpg" alt="The Eiffel Tower lit up at dusk" width="1200" height="675" loading="lazy">
+                                <span class="card-caption">
+                                    <span class="card-number">No. 03 &mdash; Paris</span>
+                                    <span class="card-title"><span lang="en">Travel</span><span lang="ko">여행</span></span>
+                                </span>
+                            </span>
+                            <span class="card-face card-back">
+                                <span class="card-number">No. 03 &mdash; <span lang="en">Travel</span><span lang="ko">여행</span></span>
+                                <span lang="en">From Daegu to Paris: discovering new cities, cultures and people is what brought me here.</span>
+                                <span lang="ko">대구에서 파리까지. 새로운 도시와 문화, 사람을 만나는 일이 저를 여기까지 이끌었습니다.</span>
                             </span>
                         </span>
-                        <span class="card-face card-back">
-                            <span class="card-number">No. 03 &mdash; <span lang="en">Travel</span><span lang="ko">여행</span></span>
-                            <span lang="en">From Daegu to Paris: discovering new cities, cultures and people is what brought me here.</span>
-                            <span lang="ko">대구에서 파리까지. 새로운 도시와 문화, 사람을 만나는 일이 저를 여기까지 이끌었습니다.</span>
-                        </span>
-                    </span>
-                </button>
+                    </button>
+                </div>
             </div>
         </section>
 
-        <!-- ===== Contact ===== -->
-        <section class="section reveal" id="contact">
-            <p class="section-label">V.</p>
-            <h2 class="section-title"><span lang="en">Contact</span><span lang="ko">연락하기</span></h2>
-            <p class="section-intro">
-                <span lang="en">Write me a message: the form opens your e-mail application, ready to send.</span>
-                <span lang="ko">메시지를 남겨주세요. 보내기를 누르면 메일 앱이 열립니다.</span>
-            </p>
+        <!-- ===== V. Contact ===== -->
+        <section class="section section-parchment" id="contact">
+            <div class="section-inner reveal">
+                <header class="section-head">
+                    <p class="section-label">V</p>
+                    <h2 class="section-title"><span lang="en">Contact</span><span lang="ko">연락하기</span></h2>
+                    <p class="section-intro">
+                        <span lang="en">Write me a message: the form opens your e-mail application, ready to send.</span>
+                        <span lang="ko">메시지를 남겨주세요. 보내기를 누르면 메일 앱이 열립니다.</span>
+                    </p>
+                </header>
 
-            <form class="contact-form" id="contact-form" action="mailto:seon-ung.yu@epitech.eu" method="post" enctype="text/plain">
-                <div class="field">
-                    <label for="contact-name"><span lang="en">Name</span><span lang="ko">이름</span></label>
-                    <input type="text" id="contact-name" name="name" required autocomplete="name"
-                           data-placeholder-en="Your name" data-placeholder-ko="이름을 입력하세요">
-                </div>
-                <div class="field">
-                    <label for="contact-email"><span lang="en">E-mail</span><span lang="ko">이메일</span></label>
-                    <input type="email" id="contact-email" name="email" required autocomplete="email"
-                           data-placeholder-en="you@example.com" data-placeholder-ko="you@example.com">
-                </div>
-                <div class="field field-full">
-                    <label for="contact-subject"><span lang="en">Subject</span><span lang="ko">주제</span></label>
-                    <select id="contact-subject" name="subject">
-                        <option value="Internship" data-label-en="Internship" data-label-ko="인턴십">Internship</option>
-                        <option value="Project" data-label-en="Project" data-label-ko="프로젝트">Project</option>
-                        <option value="Just saying hello" data-label-en="Just saying hello" data-label-ko="그냥 인사">Just saying hello</option>
-                    </select>
-                </div>
-                <div class="field field-full">
-                    <label for="contact-message"><span lang="en">Message</span><span lang="ko">메시지</span></label>
-                    <textarea id="contact-message" name="message" rows="5" required
-                              data-placeholder-en="Your message" data-placeholder-ko="메시지를 입력하세요"></textarea>
-                </div>
-                <div class="field-full form-footer">
-                    <button class="btn btn-gold" type="submit"><span lang="en">Send</span><span lang="ko">보내기</span></button>
-                    <p class="form-status" id="form-status" aria-live="polite"></p>
-                </div>
-            </form>
+                <form class="contact-form frame" id="contact-form" action="mailto:seon-ung.yu@epitech.eu" method="post" enctype="text/plain">
+                    <div class="field">
+                        <label for="contact-name"><span lang="en">Name</span><span lang="ko">이름</span></label>
+                        <input type="text" id="contact-name" name="name" required autocomplete="name"
+                               data-placeholder-en="Your name" data-placeholder-ko="이름을 입력하세요">
+                    </div>
+                    <div class="field">
+                        <label for="contact-email"><span lang="en">E-mail</span><span lang="ko">이메일</span></label>
+                        <input type="email" id="contact-email" name="email" required autocomplete="email"
+                               data-placeholder-en="you@example.com" data-placeholder-ko="you@example.com">
+                    </div>
+                    <div class="field field-full">
+                        <label for="contact-subject"><span lang="en">Subject</span><span lang="ko">주제</span></label>
+                        <select id="contact-subject" name="subject">
+                            <option value="Internship" data-label-en="Internship" data-label-ko="인턴십">Internship</option>
+                            <option value="Project" data-label-en="Project" data-label-ko="프로젝트">Project</option>
+                            <option value="Just saying hello" data-label-en="Just saying hello" data-label-ko="그냥 인사">Just saying hello</option>
+                        </select>
+                    </div>
+                    <div class="field field-full">
+                        <label for="contact-message"><span lang="en">Message</span><span lang="ko">메시지</span></label>
+                        <textarea id="contact-message" name="message" rows="5" required
+                                  data-placeholder-en="Your message" data-placeholder-ko="메시지를 입력하세요"></textarea>
+                    </div>
+                    <div class="field-full form-footer">
+                        <button class="btn btn-gold" type="submit"><span lang="en">Send</span><span lang="ko">보내기</span></button>
+                        <p class="form-status" id="form-status" aria-live="polite"></p>
+                    </div>
+                </form>
 
-            <p class="contact-direct">
-                <a href="mailto:seon-ung.yu@epitech.eu">seon-ung.yu@epitech.eu</a>
-                ·
-                <a href="https://github.com/seonungyu">github.com/seonungyu</a>
-            </p>
+                <p class="contact-direct">
+                    <a href="mailto:seon-ung.yu@epitech.eu">seon-ung.yu@epitech.eu</a>
+                    <span aria-hidden="true">&#x269C;&#xFE0E;</span>
+                    <a href="https://github.com/seonungyu">github.com/seonungyu</a>
+                </p>
+            </div>
         </section>
 
     </main>
 
+    <!-- ===== Footer ===== -->
     <footer class="site-footer">
-        <a class="crest crest-light" href="#top" aria-label="Back to top">SY</a>
-        <p>
+        <a class="crest crest-large" href="#top" aria-label="Back to top">SY</a>
+        <p class="footer-name">Seon-ung YU</p>
+        <p class="footer-motto">Daegu &middot; Paris &middot; Epitech</p>
+        <p class="footer-copy">
             <span lang="en">© 2026 Seon-ung YU · Hand-made with HTML, CSS and JavaScript at Epitech</span>
             <span lang="ko">© 2026 유선웅 · Epitech에서 HTML, CSS, JavaScript로 직접 만들었습니다</span>
         </p>
