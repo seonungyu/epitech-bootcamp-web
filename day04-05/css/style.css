@@ -357,6 +357,10 @@ html[lang="ko"] body {
     color: var(--ivory);
     text-align: center;
     border-bottom: 1px solid var(--gold);
+}
+
+/* only the content rises on load, the navy background stays still */
+.hero > * {
     animation: fade-up 1.1s ease both;
 }
 
