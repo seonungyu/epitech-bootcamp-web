@@ -1,5 +1,7 @@
 # Digital Resume — Seon-ung YU
 
+**Live:** https://seonungyu.github.io/epitech-bootcamp-web/day04-05/
+
 Online resume made for the Epitech Web bootcamp mini-project (Day 04-05).
 
 ## Structure
