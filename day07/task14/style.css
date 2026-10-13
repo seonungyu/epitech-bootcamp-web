@@ -1,0 +1,38 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    max-width: 640px;
+    margin: 40px auto;
+    padding: 0 16px;
+}
+
+form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 16px;
+}
+
+input,
+select,
+button {
+    padding: 6px 8px;
+    font-size: 1em;
+}
+
+li {
+    margin: 8px 0;
+    padding: 8px;
+    border: 2px solid #ccc;
+}
+
+.note {
+    border-color: blue;
+}
+
+.email {
+    border-color: green;
+}
+
+.todo {
+    border-color: red;
+}
